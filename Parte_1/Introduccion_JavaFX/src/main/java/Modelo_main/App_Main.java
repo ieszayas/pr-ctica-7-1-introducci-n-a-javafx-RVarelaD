@@ -10,11 +10,10 @@ public class App_Main extends Application {
 
     @Override
     public void start(Stage primaryStage) {
-        Vista_C vista = new Vista_C();
-        Controlador_C controlador = new Controlador_C(vista);
+        Vista_C vista = new Vista_C(primaryStage);
+        new Controlador_C(vista);
 
-        primaryStage.setScene(new Scene(vista.getLayout(), 400, 200));
-        primaryStage.setTitle("Saludo JavaFX");
+        primaryStage.setTitle("Practica 1.2");
         primaryStage.show();
     }
 
